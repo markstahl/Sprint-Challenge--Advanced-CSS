@@ -1,1 +1,27 @@
-// Mixins Here
+.button (@width: 195px, @btn-bg-color: black, @font-color: white, @padding: 2% 4%) {
+    color: @font-color;
+    background-color: @btn-bg-color;
+    text-align: center;
+    cursor: pointer;
+    padding: @padding;
+    width: @width;
+    font-size: 1.8rem;
+    border-radius: 5px; 
+
+    :hover {
+        background-color: white;
+        color: @btn-bg-color;
+      }
+
+  }
+
+
+.flex1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex2 {
+    display: flex;
+    flex-direction: column;
+}
