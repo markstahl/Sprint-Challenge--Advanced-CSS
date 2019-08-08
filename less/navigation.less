@@ -1,1 +1,30 @@
-// Navigation code here
+.nav-container {
+  background: @wild-sand;
+  padding: 1em 0;
+  width: inherit;
+
+  h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1.4rem;
+  }
+
+  .nav {
+      width: 30%;
+      font-size: 1.4rem;
+      .flex1;
+      justify-content: space-between;
+      margin: 0 auto;
+
+      a {
+          text-decoration: none;
+          color: @river-bend;
+      }
+
+      @media @phone {
+          width: 100%;
+          display: inline-flex;
+          justify-content: space-around;
+      }  
+  }
+}
